@@ -6,8 +6,8 @@
   <meta name="description" content="Encontre os melhores eletrônicos com promoções exclusivas na Cell Tech.">
   <title>Cell Tech - Eletrônicos de Qualidade</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Ícones FontAwesome -->
+  <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
 </head>
 <body>
   <!-- Cabeçalho -->
@@ -41,21 +41,28 @@
         <img src="https://via.placeholder.com/350" alt="Produto 1">
         <h3>Produto 1</h3>
         <p>R$ 100,00</p>
-        <button>Comprar</button>
+        <button class="comprar">Comprar</button>
       </div>
       <div class="produto">
         <img src="https://via.placeholder.com/350" alt="Produto 2">
         <h3>Produto 2</h3>
         <p>R$ 200,00</p>
-        <button>Comprar</button>
+        <button class="comprar">Comprar</button>
       </div>
       <div class="produto">
         <img src="https://via.placeholder.com/350" alt="Produto 3">
         <h3>Produto 3</h3>
         <p>R$ 300,00</p>
-        <button>Comprar</button>
+        <button class="comprar">Comprar</button>
       </div>
     </div>
+  </section>
+
+  <!-- Carrinho -->
+  <section id="carrinho" class="carrinho">
+    <h2>Carrinho de Compras</h2>
+    <ul id="itensCarrinho"></ul>
+    <p id="totalCarrinho">Total: R$ 0,00</p>
   </section>
 
   <!-- Seção de Contato -->
@@ -75,6 +82,7 @@
   <footer>
     <p>&copy; 2024 Cell Tech - Todos os direitos reservados.</p>
   </footer>
-  <script src="script.js"></script>
+
+  <script src="script.js"></script> <!-- Link para o arquivo JavaScript -->
 </body>
 </html>

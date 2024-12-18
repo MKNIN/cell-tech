@@ -20,6 +20,11 @@ header {
   z-index: 1000;
 }
 
+header .logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
 header .menu ul {
   display: flex;
   list-style: none;
@@ -111,6 +116,35 @@ header .menu ul li a:hover {
 
 .produto button:hover {
   background-color: #104E8B; /* Azul mais escuro no hover */
+}
+
+/* Carrinho */
+.carrinho {
+  padding: 40px 20px;
+  background-color: #1C1C1C; /* Fundo escuro para o carrinho */
+  text-align: center;
+  color: #E0E0E0;
+}
+
+.carrinho h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.carrinho ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.carrinho ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#totalCarrinho {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 /* Contato */
