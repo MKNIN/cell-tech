@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Encontre os melhores eletrônicos, incluindo telas, capas e fones de ouvido, com promoções exclusivas na Cell Tech.">
+  <meta name="description" content="Encontre os melhores eletrônicos com promoções exclusivas na Cell Tech.">
   <title>Cell Tech - Eletrônicos de Qualidade</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Ícones FontAwesome -->
 </head>
 <body>
   <!-- Cabeçalho -->
@@ -18,7 +19,6 @@
       <ul>
         <li><a href="#">Início</a></li>
         <li><a href="#produtos">Produtos</a></li>
-        <li><a href="#sobre">Sobre</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
@@ -28,7 +28,7 @@
   <section class="banner">
     <div class="banner-content">
       <h2>Promoções Exclusivas!</h2>
-      <p>Os melhores eletrônicos pelos melhores preços.</p>
+      <p>Eletrônicos de alta qualidade com preços imperdíveis.</p>
       <a href="#produtos" class="btn">Confira Agora</a>
     </div>
   </section>
@@ -38,53 +38,42 @@
     <h2>Produtos em Destaque</h2>
     <div class="produtos-lista">
       <div class="produto">
-        <img src="https://via.placeholder.com/150" alt="Produto 1">
+        <img src="https://via.placeholder.com/350" alt="Produto 1">
         <h3>Produto 1</h3>
         <p>R$ 100,00</p>
-        <button onclick="adicionarCarrinho('Produto 1', 100)">Adicionar ao Carrinho</button>
+        <button>Comprar</button>
       </div>
       <div class="produto">
-        <img src="https://via.placeholder.com/150" alt="Produto 2">
+        <img src="https://via.placeholder.com/350" alt="Produto 2">
         <h3>Produto 2</h3>
         <p>R$ 200,00</p>
-        <button onclick="adicionarCarrinho('Produto 2', 200)">Adicionar ao Carrinho</button>
+        <button>Comprar</button>
       </div>
       <div class="produto">
-        <img src="https://via.placeholder.com/150" alt="Produto 3">
+        <img src="https://via.placeholder.com/350" alt="Produto 3">
         <h3>Produto 3</h3>
         <p>R$ 300,00</p>
-        <button onclick="adicionarCarrinho('Produto 3', 300)">Adicionar ao Carrinho</button>
+        <button>Comprar</button>
       </div>
     </div>
   </section>
 
-  <!-- Sobre -->
-  <section id="sobre" class="sobre">
-    <h2>Sobre a Cell Tech</h2>
-    <p>A Cell Tech é uma empresa especializada na venda de acessórios e componentes de eletrônicos de alta qualidade. Estamos no mercado há mais de 10 anos, oferecendo as melhores soluções para nossos clientes.</p>
-  </section>
-
-  <!-- Contato -->
+  <!-- Seção de Contato -->
   <section id="contato" class="contato">
-    <h2>Entre em Contato</h2>
-    <form>
+    <h2>Entre em Contato Conosco</h2>
+    <form action="#">
       <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required><br><br>
+      <input type="text" id="nome" name="nome" required>
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required><br><br>
+      <input type="email" id="email" name="email" required>
       <label for="mensagem">Mensagem:</label>
-      <textarea id="mensagem" name="mensagem" required></textarea><br><br>
-      <button type="submit" class="btn">Enviar Mensagem</button>
+      <textarea id="mensagem" name="mensagem" required></textarea>
+      <button type="submit">Enviar</button>
     </form>
   </section>
 
   <footer>
     <p>&copy; 2024 Cell Tech - Todos os direitos reservados.</p>
-    <div class="social-media">
-      <a href="#">Facebook</a>
-      <a href="#">Instagram</a>
-      <a href="#">Twitter</a>
-    </div>
   </footer>
   <script src="script.js"></script>
 </body>
