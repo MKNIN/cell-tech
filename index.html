@@ -17,16 +17,7 @@
     <nav class="menu">
       <ul>
         <li><a href="#">Início</a></li>
-        <li><a href="#setores">Setores</a>
-          <ul class="dropdown">
-            <li><a href="#telas">Telas</a></li>
-            <li><a href="#capas">Capas</a></li>
-            <li><a href="#peliculas">Películas</a></li>
-            <li><a href="#fones">Fones</a></li>
-            <li><a href="#carregadores">Carregadores</a></li>
-            <li><a href="#cabos">Cabos</a></li>
-          </ul>
-        </li>
+        <li><a href="#produtos">Produtos</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
@@ -42,37 +33,6 @@
     </div>
   </section>
 
-  <!-- Setores -->
-  <section id="setores" class="setores">
-    <h2>Explore Nossos Setores</h2>
-    <div class="setores-lista">
-      <div class="setor" id="telas">
-        <h3>Telas</h3>
-        <p>Encontre telas de alta qualidade para o seu dispositivo.</p>
-      </div>
-      <div class="setor" id="capas">
-        <h3>Capas</h3>
-        <p>Capas estilosas e resistentes para proteger seu aparelho.</p>
-      </div>
-      <div class="setor" id="peliculas">
-        <h3>Películas</h3>
-        <p>Proteja sua tela com películas de alta resistência.</p>
-      </div>
-      <div class="setor" id="fones">
-        <h3>Fones</h3>
-        <p>Fones de ouvido com qualidade de som incrível.</p>
-      </div>
-      <div class="setor" id="carregadores">
-        <h3>Carregadores</h3>
-        <p>Carregadores rápidos e confiáveis para o seu dia a dia.</p>
-      </div>
-      <div class="setor" id="cabos">
-        <h3>Cabos</h3>
-        <p>Cabos duráveis e compatíveis com diversos dispositivos.</p>
-      </div>
-    </div>
-  </section>
-
   <!-- Produtos -->
   <section id="produtos" class="produtos">
     <h2>Produtos em Destaque</h2>
@@ -81,47 +41,50 @@
         <img src="https://via.placeholder.com/150" alt="Produto 1">
         <h3>Produto 1</h3>
         <p>R$ 100,00</p>
-        <button onclick="adicionarAoCarrinho('Produto 1', 100)">Comprar</button>
+        <button onclick="adicionarCarrinho('Produto 1', 100)">Adicionar ao Carrinho</button>
       </div>
       <div class="produto">
         <img src="https://via.placeholder.com/150" alt="Produto 2">
         <h3>Produto 2</h3>
         <p>R$ 200,00</p>
-        <button onclick="adicionarAoCarrinho('Produto 2', 200)">Comprar</button>
+        <button onclick="adicionarCarrinho('Produto 2', 200)">Adicionar ao Carrinho</button>
       </div>
       <div class="produto">
         <img src="https://via.placeholder.com/150" alt="Produto 3">
         <h3>Produto 3</h3>
         <p>R$ 300,00</p>
-        <button onclick="adicionarAoCarrinho('Produto 3', 300)">Comprar</button>
+        <button onclick="adicionarCarrinho('Produto 3', 300)">Adicionar ao Carrinho</button>
       </div>
     </div>
   </section>
 
-  <!-- Carrinho de Compras -->
-  <section id="carrinho" class="carrinho">
-    <h2>Carrinho</h2>
-    <div id="itensCarrinho"></div>
-    <button onclick="finalizarPedido()">Finalizar Pedido</button>
+  <!-- Sobre -->
+  <section id="sobre" class="sobre">
+    <h2>Sobre a Cell Tech</h2>
+    <p>A Cell Tech é uma empresa especializada na venda de acessórios e componentes de eletrônicos de alta qualidade. Estamos no mercado há mais de 10 anos, oferecendo as melhores soluções para nossos clientes.</p>
   </section>
 
-  <!-- Finalização do Pedido -->
-  <section id="finalizarPedido" class="finalizar-pedido" style="display:none;">
-    <h2>Finalizar Pedido</h2>
-    <form id="formFinalizar">
-      <label for="nome">Nome:</label><input type="text" id="nome" required><br>
-      <label for="endereco">Endereço:</label><input type="text" id="endereco" required><br>
-      <label for="pagamento">Método de Pagamento:</label>
-      <select id="pagamento">
-        <option value="cartao">Cartão de Crédito</option>
-        <option value="boleto">Boleto Bancário</option>
-      </select><br>
-      <button type="submit">Confirmar Pedido</button>
+  <!-- Contato -->
+  <section id="contato" class="contato">
+    <h2>Entre em Contato</h2>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" required></textarea><br><br>
+      <button type="submit" class="btn">Enviar Mensagem</button>
     </form>
   </section>
 
   <footer>
     <p>&copy; 2024 Cell Tech - Todos os direitos reservados.</p>
+    <div class="social-media">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </div>
   </footer>
   <script src="script.js"></script>
 </body>

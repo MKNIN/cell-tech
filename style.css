@@ -3,8 +3,8 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #000000;
-  color: white;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
 header {
@@ -27,7 +27,6 @@ header .menu ul {
 }
 
 header .menu ul li {
-  position: relative;
   margin-right: 15px;
 }
 
@@ -37,48 +36,27 @@ header .menu ul li a {
   font-weight: bold;
 }
 
-header .menu ul li:hover .dropdown {
-  display: block;
-}
-
-header .dropdown {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #333333;
-  color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-header .dropdown li {
-  margin: 0;
-}
-
-header .dropdown li a {
-  color: #1E90FF;
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-}
-
 /* Banner */
 .banner {
-  background-image: url('https://via.placeholder.com/1200x400');
+  background-image: url('https://via.placeholder.com/1200x500');
   background-size: cover;
-  background-color: #000000;
   color: white;
   text-align: center;
-  padding: 50px 20px;
+  padding: 100px 20px;
+  margin-top: 60px;
+}
+
+.banner-content h2 {
+  font-size: 3em;
 }
 
 .banner .btn {
   background-color: #1E90FF;
   color: white;
-  padding: 10px 20px;
-  text-decoration: none;
+  padding: 15px 30px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
 .banner .btn:hover {
@@ -86,114 +64,112 @@ header .dropdown li a {
 }
 
 /* Seções */
-.setores, .produtos {
-  padding: 20px;
-  background-color: #000000;
-  color: white;
+.produtos {
+  padding: 60px 20px;
+  background-color: #ffffff;
   text-align: center;
 }
 
-.produtos-lista, .setores-lista {
+.produtos-lista {
   display: flex;
+  justify-content: space-around;
   gap: 20px;
-  justify-content: center;
 }
 
-.produto, .setor {
-  background-color: #1A1A1A;
-  border: 1px solid #1E90FF;
+.produto {
+  background-color: #f0f0f0;
+  padding: 20px;
   border-radius: 5px;
-  padding: 15px;
-  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.produto h3, .setor h3 {
+.produto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.produto h3 {
   color: #1E90FF;
 }
 
-.produto button, .banner .btn {
+.produto button {
   background-color: #1E90FF;
   border: none;
   color: white;
-  padding: 10px 15px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.produto button:hover, .banner .btn:hover {
-  background-color: #104E8B;
-}
-
-/* Carrinho de Compras */
-.carrinho {
-  padding: 20px;
-  background-color: #1A1A1A;
-  color: white;
-  text-align: center;
-}
-
-#itensCarrinho {
-  margin-bottom: 20px;
-}
-
-button {
   padding: 10px 20px;
-  background-color: #1E90FF;
-  color: white;
-  border: none;
   cursor: pointer;
+  border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
-button:hover {
+.produto button:hover {
   background-color: #104E8B;
 }
 
-/* Finalização do Pedido */
-.finalizar-pedido {
-  padding: 20px;
-  background-color: #1A1A1A;
-  color: white;
+/* Sobre */
+.sobre {
+  padding: 60px 20px;
+  background-color: #eeeeee;
   text-align: center;
 }
 
-form input, form select {
+.sobre h2 {
+  font-size: 2.5em;
+  color: #1E90FF;
+}
+
+/* Contato */
+.contato {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.contato form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contato input, .contato textarea {
   padding: 10px;
-  margin: 5px;
-  width: 100%;
+  margin: 10px 0;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
 }
 
-form button {
+.contato button {
   background-color: #1E90FF;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 30px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-form button:hover {
+.contato button:hover {
   background-color: #104E8B;
 }
 
 /* Rodapé */
 footer {
-  text-align: center;
-  padding: 10px;
   background-color: #1E90FF;
   color: white;
+  text-align: center;
+  padding: 20px;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  .setores-lista, .produtos-lista {
-    flex-direction: column;
-    align-items: center;
-  }
+footer .social-media {
+  margin-top: 10px;
+}
 
-  header .menu ul {
-    flex-direction: column;
-  }
+footer .social-media a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
 
-  .banner {
-    padding: 30px 10px;
-  }
+footer .social-media a:hover {
+  text-decoration: underline;
 }
