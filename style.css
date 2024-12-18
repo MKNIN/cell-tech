@@ -1,19 +1,23 @@
 /* Estilos gerais */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #000000; /* Fundo preto */
-  color: white; /* Texto branco */
+  background-color: #000000;
+  color: white;
 }
 
 header {
-  background-color: #1E90FF; /* Azul */
+  background-color: #1E90FF;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 header .menu ul {
@@ -42,7 +46,7 @@ header .dropdown {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #333333; /* Cinza escuro */
+  background-color: #333333;
   color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
@@ -52,7 +56,7 @@ header .dropdown li {
 }
 
 header .dropdown li a {
-  color: #1E90FF; /* Azul */
+  color: #1E90FF;
   display: block;
   padding: 10px;
   text-decoration: none;
@@ -62,24 +66,29 @@ header .dropdown li a {
 .banner {
   background-image: url('https://via.placeholder.com/1200x400');
   background-size: cover;
-  background-color: #000000; /* Fundo preto */
+  background-color: #000000;
   color: white;
   text-align: center;
   padding: 50px 20px;
 }
 
 .banner .btn {
-  background-color: #1E90FF; /* Azul */
+  background-color: #1E90FF;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
   font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.banner .btn:hover {
+  background-color: #104E8B;
 }
 
 /* Seções */
 .setores, .produtos {
   padding: 20px;
-  background-color: #000000; /* Fundo preto */
+  background-color: #000000;
   color: white;
   text-align: center;
 }
@@ -91,33 +100,50 @@ header .dropdown li a {
 }
 
 .produto, .setor {
-  background-color: #1A1A1A; /* Preto escuro */
-  border: 1px solid #1E90FF; /* Azul */
+  background-color: #1A1A1A;
+  border: 1px solid #1E90FF;
   border-radius: 5px;
   padding: 15px;
   text-align: center;
 }
 
 .produto h3, .setor h3 {
-  color: #1E90FF; /* Azul */
+  color: #1E90FF;
 }
 
 .produto button, .banner .btn {
-  background-color: #1E90FF; /* Azul */
+  background-color: #1E90FF;
   border: none;
   color: white;
   padding: 10px 15px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .produto button:hover, .banner .btn:hover {
-  background-color: #104E8B; /* Azul escuro */
+  background-color: #104E8B;
 }
 
 /* Rodapé */
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #1E90FF; /* Azul */
+  background-color: #1E90FF;
   color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .setores-lista, .produtos-lista {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .menu ul {
+    flex-direction: column;
+  }
+
+  .banner {
+    padding: 30px 10px;
+  }
 }
