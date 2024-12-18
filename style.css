@@ -124,6 +124,56 @@ header .dropdown li a {
   background-color: #104E8B;
 }
 
+/* Carrinho de Compras */
+.carrinho {
+  padding: 20px;
+  background-color: #1A1A1A;
+  color: white;
+  text-align: center;
+}
+
+#itensCarrinho {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #1E90FF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #104E8B;
+}
+
+/* Finalização do Pedido */
+.finalizar-pedido {
+  padding: 20px;
+  background-color: #1A1A1A;
+  color: white;
+  text-align: center;
+}
+
+form input, form select {
+  padding: 10px;
+  margin: 5px;
+  width: 100%;
+}
+
+form button {
+  background-color: #1E90FF;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #104E8B;
+}
+
 /* Rodapé */
 footer {
   text-align: center;
