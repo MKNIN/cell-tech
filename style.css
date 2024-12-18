@@ -3,12 +3,12 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #121212; /* Cor de fundo preto */
+  color: #E0E0E0; /* Texto em cinza claro */
 }
 
 header {
-  background-color: #1E90FF;
+  background-color: #1E90FF; /* Azul para o cabeçalho */
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -37,7 +37,7 @@ header .menu ul li a {
 }
 
 header .menu ul li a:hover {
-  color: #104E8B;
+  color: #104E8B; /* Azul mais escuro no hover */
 }
 
 /* Banner */
@@ -52,7 +52,7 @@ header .menu ul li a:hover {
 }
 
 .banner .btn {
-  background-color: #1E90FF;
+  background-color: #1E90FF; /* Azul para o botão */
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -61,13 +61,13 @@ header .menu ul li a:hover {
 }
 
 .banner .btn:hover {
-  background-color: #104E8B;
+  background-color: #104E8B; /* Azul mais escuro no hover */
 }
 
 /* Produtos */
 .produtos {
   padding: 60px 20px;
-  background-color: #ffffff;
+  background-color: #1C1C1C; /* Fundo escuro para a seção de produtos */
   text-align: center;
 }
 
@@ -79,7 +79,7 @@ header .menu ul li a:hover {
 }
 
 .produto {
-  background-color: #f9f9f9;
+  background-color: #2C2C2C; /* Fundo escuro para o card do produto */
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -101,7 +101,7 @@ header .menu ul li a:hover {
 }
 
 .produto button {
-  background-color: #1E90FF;
+  background-color: #1E90FF; /* Azul para o botão */
   color: white;
   border: none;
   padding: 10px;
@@ -110,13 +110,13 @@ header .menu ul li a:hover {
 }
 
 .produto button:hover {
-  background-color: #104E8B;
+  background-color: #104E8B; /* Azul mais escuro no hover */
 }
 
 /* Contato */
 .contato {
   padding: 40px 20px;
-  background-color: #f4f4f4;
+  background-color: #121212; /* Cor de fundo preto */
   text-align: center;
 }
 
@@ -130,13 +130,15 @@ header .menu ul li a:hover {
 
 .contato input, .contato textarea {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #555; /* Borda mais escura para o input */
   border-radius: 5px;
   width: 100%;
+  background-color: #333; /* Fundo escuro nos campos */
+  color: #E0E0E0; /* Cor do texto nos campos */
 }
 
 .contato button {
-  background-color: #1E90FF;
+  background-color: #1E90FF; /* Azul para o botão */
   color: white;
   padding: 10px 20px;
   border: none;
@@ -146,13 +148,13 @@ header .menu ul li a:hover {
 }
 
 .contato button:hover {
-  background-color: #104E8B;
+  background-color: #104E8B; /* Azul mais escuro no hover */
 }
 
 /* Rodapé */
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #1E90FF;
+  background-color: #1E90FF; /* Azul para o rodapé */
   color: white;
 }
