@@ -1,0 +1,123 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000; /* Fundo preto */
+  color: white; /* Texto branco */
+}
+
+header {
+  background-color: #1E90FF; /* Azul */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+header .menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+header .menu ul li {
+  position: relative;
+  margin-right: 15px;
+}
+
+header .menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header .menu ul li:hover .dropdown {
+  display: block;
+}
+
+header .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333333; /* Cinza escuro */
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header .dropdown li {
+  margin: 0;
+}
+
+header .dropdown li a {
+  color: #1E90FF; /* Azul */
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* Banner */
+.banner {
+  background-image: url('https://via.placeholder.com/1200x400');
+  background-size: cover;
+  background-color: #000000; /* Fundo preto */
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.banner .btn {
+  background-color: #1E90FF; /* Azul */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Seções */
+.setores, .produtos {
+  padding: 20px;
+  background-color: #000000; /* Fundo preto */
+  color: white;
+  text-align: center;
+}
+
+.produtos-lista, .setores-lista {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.produto, .setor {
+  background-color: #1A1A1A; /* Preto escuro */
+  border: 1px solid #1E90FF; /* Azul */
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+}
+
+.produto h3, .setor h3 {
+  color: #1E90FF; /* Azul */
+}
+
+.produto button, .banner .btn {
+  background-color: #1E90FF; /* Azul */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.produto button:hover, .banner .btn:hover {
+  background-color: #104E8B; /* Azul escuro */
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #1E90FF; /* Azul */
+  color: white;
+}
